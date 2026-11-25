@@ -1,0 +1,49 @@
+{
+  "classical (top-hat + Otsu + watershed)": {
+    "easy (difficulty < 0.55)": {
+      "n": 66,
+      "dice": 0.9266,
+      "iou": 0.8638,
+      "mean_abs_count_error": 0.485
+    },
+    "hard (difficulty >= 0.55)": {
+      "n": 84,
+      "dice": 0.9184,
+      "iou": 0.8498,
+      "mean_abs_count_error": 0.583
+    },
+    "all": {
+      "n": 150,
+      "dice": 0.922,
+      "iou": 0.856,
+      "mean_abs_count_error": 0.54
+    }
+  },
+  "U-Net (trained on 400 synthetic images)": {
+    "easy (difficulty < 0.55)": {
+      "n": 66,
+      "dice": 0.9864,
+      "iou": 0.9733,
+      "mean_abs_count_error": 0.333
+    },
+    "hard (difficulty >= 0.55)": {
+      "n": 84,
+      "dice": 0.9772,
+      "iou": 0.9555,
+      "mean_abs_count_error": 0.524
+    },
+    "all": {
+      "n": 150,
+      "dice": 0.9813,
+      "iou": 0.9633,
+      "mean_abs_count_error": 0.44
+    }
+  },
+  "setup": {
+    "train_images": 400,
+    "test_images": 150,
+    "size": 96,
+    "mean_cells_per_test_image": 9.51,
+    "runtime_s": 68.2
+  }
+}
